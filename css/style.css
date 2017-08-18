@@ -1,3 +1,90 @@
+body {
+  background-color: #fafafa;
+
+  font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+form input {
+  font-size: 18px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25%;
+}
+.logo {
+  margin-left: 25%;
+  background-image: url(/images/insta.png);
+  background-size: 420px 395px;
+  background-position: -176px 0;
+  height: 35px;
+  width: 176px;
+  background-repeat: no-repeat;
+}
+.options {
+  margin: 2% 5% 2% 25%;
+  flex-grow: 2;
+}
+i {
+  margin-left: 10%;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  margin: 2%;
+}
+.square {
+  margin: 1%;
+}
 .show {
   width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 5px 5px 5px #D6DBDF;
+  margin-top: 5%;
+}
+.postinfo {
+  margin: 2%;
+}
+.thumbnail {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 5px 5px 5px #D6DBDF;
+}
+.author {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.editlink {
+  color: #888888;
 }

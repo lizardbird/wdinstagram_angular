@@ -1,9 +1,12 @@
 <div class="maincontent">
 
-  <h1>Entries</h1>
-  <div data-ng-repeat="entry in vm.entries">
-        <a ui-sref="entriesShow({id: entry.id})">{{ entry.author }}</a>
+  <div class="gallery">
+    <div class="row">
+      <div class="square" ng-repeat="entry in vm.entries">
+        <a ui-sref="entriesShow({id: entry.id})">
+          <img ng-src="{{entry.photo_url}}" class="thumbnail">
+        </a>
+      </div>
+    </div>
   </div>
-  <br>
-  <a ui-sref="entriesNew">Add New Entry</a>
 </div>
