@@ -1,0 +1,9 @@
+<div class="maincontent">
+
+  <h1>Entries</h1>
+  <div data-ng-repeat="entry in vm.entries">
+        <a ui-sref="entriesShow({id: entry.id})">{{ entry.author }}</a>
+  </div>
+  <br>
+
+</div>
