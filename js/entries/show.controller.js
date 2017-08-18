@@ -1,16 +1,8 @@
 angular.module('wdinstagram')
-.controller('WdiShow', [WdiShow])
-function WdiShow () {
-  this.entries = [
-    {
-      photo_url: '123.png',
-      author: 'Liz',
-      body: 'Hey'
-    },
-    {
-      photo_url: '145.png',
-      author: 'Mike',
-      body: 'Hello'
-    }
-  ]
+.controller('WdiShow', [
+  '$stateParams',
+  'Entries',
+  WdiShow])
+function WdiShow ($stateParams, Entries) {
+  this.entry = Entries.get({id: $stateParams.id})
 }

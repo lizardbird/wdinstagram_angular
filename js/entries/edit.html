@@ -1,0 +1,15 @@
+<div class="maincontent">
+  <h2>Edit Entry</h2>
+
+  <form>
+    <input placeholder="Author" data-ng-model="vm.entry.author" />
+    <input placeholder="Body" data-ng-model="vm.entry.body" />
+    <input placeholder="Photo URL" data-ng-model="vm.entry.photo_url" /><br>
+    <button type="button" data-ng-click="vm.update()">Update</button> or 
+    <button type="button" ng-click="vm.destroy()">Delete</button>
+  </form>
+
+  <pre>
+    {{vm.entry | json}}
+  </pre>
+</div>

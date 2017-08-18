@@ -1,1 +1,9 @@
+<div class="maincontent">
+  <div class="showbox">
 
+  <img class="show" ng-src="{{ vm.entry.photo_url }}" alt=""><br>
+    <p>{{ vm.entry.body }}</p>
+    <p>by: {{ vm.entry.author }}</p>
+    <a ui-sref="entriesEdit({id: vm.entry.id})">Edit This Entry</a>
+  </div>
+</div>
