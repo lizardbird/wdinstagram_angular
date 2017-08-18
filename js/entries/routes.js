@@ -31,4 +31,5 @@ function config ($stateProvider, $urlRouterProvider){
       controller: 'WdiEdit',
       controllerAs: 'vm'
     })
+    $urlRouterProvider.otherwise('/entries')
   }
